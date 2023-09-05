@@ -5,18 +5,17 @@ public class Cliente {
         Dado dado1 = new Dado();
         Dado dado2 = new Dado();
 
-       
+        for (int i = 0; i < 3; i++) {
+           
+            int jogada1 = dado1.giraDados();
+            int jogada2 = dado2.giraDados();
 
-        for(int i=0; i < 3;i++){
-            int jogadas = 0;
-            int jogadas2 = 0;
-            int resultado= jogadas + jogadas2;
+           
+            int resultado = jogada1 + jogada2;
 
-            System.out.printf("Dado1:%d",dado1);
-            System.out.printf("Dado2:%d",dado2);
-            System.out.printf("Resultado:%d",resultado);
-
-
+            System.out.printf("Dado1: %d\n", jogada1);
+            System.out.printf("Dado2: %d\n", jogada2);
+            System.out.printf("Resultado: %d\n\n", resultado);
+        }
     }
-}
 }
